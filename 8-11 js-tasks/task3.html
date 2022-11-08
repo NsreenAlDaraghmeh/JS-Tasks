@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="font" onchange="changeFont();">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Impact">Impact</option>
+        <option value="Ms comic sans">MS Comic Sans</option>
+    </select>
+
+    <select id="size" onchange="changeFontsize();">
+        <option value="20px">20px</option>
+        <option value="30px">30px</option>
+        <option value="10px">10px</option>
+        <option value="'16px'">16px</option>
+    </select>
+    <label for="Italic"> Italic </label>
+    <input type="checkbox" id="italic" onclick="italic()" value="italic">
+
+    <label for="bold"> Bold </label>
+    <input type="checkbox" id="bold" onclick="bold()" value="bold">
+
+    <label for="underline"> underline </label>
+    <input type="checkbox" id="underline" onclick="underline()" value="underline">
+    <br><br>
+    <div id="div1"> The quick brown fox jumbs over the lazy dog</div>
+    <script src="task3.js"></script>
+</body>
+</html>
