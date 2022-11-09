@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            display: flex;
+            width: 300px;
+            justify-content: space-around;
+
+        }
+        .div1 label {
+            display: inline-block;
+            width: 150px;
+        }
+      
+        #card{
+            display: none;
+            font-size: larger;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <h2>masterpiece </h2>
+
+    <form>
+    <div class="div1">
+      <label for="subject">subject :</label>
+      <input type="text" id="subject" name="subject"  placeholder="Your subject">
+    </div><br><br>
+        
+   
+    <textarea id="describe" rows="8" cols="50" name="comment"  placeholder="Describe Your idea..."></textarea><br><br>
+    
+        <div class="div1">
+            <label for="user">user type :</label>
+            <input type="text" id="user" name="user"  ></div><br>
+            <div class="div1">
+            <label for="Tech">Technology used:</label>
+            <input type="text" id="Tech" name="Tech"  placeholder="Technology used">
+        </div>
+        
+    </form>
+        <input type="submit" id="submit" onclick="func1()">
+        <div id="card">
+            <div class="container">
+                <label> subject :</label>
+                <span id="su"></span><br><br>
+                <label> describe :</label>
+                <span id="desc"></span><br><br>
+                <label> user type:</label>
+                <span id="us"></span><br><br>
+                <label> Technology used:</label>
+                <span id="te"></span><br><br>
+            </div>
+          </div>
+    <script src="task2.js"></script>
+</body>
+</html>

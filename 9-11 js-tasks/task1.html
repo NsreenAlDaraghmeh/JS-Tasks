@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            display: flex;
+            width: 300px;
+            justify-content: space-around;
+
+        }
+        .div1 label , div2 label{
+            display: inline-block;
+            width: 150px;
+        }
+        #div2{
+            display: flex;
+            width: 150px;
+            margin-left:20px ;
+            margin-top: 20px;
+            justify-content:space-around;
+        }
+        #card{
+            display: none;
+            font-size: larger;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <h2>Personal Information</h2>
+
+<form>
+<div class="div1">
+  <label for="name">Your Name :</label>
+  <input type="text" id="name" name="name"  placeholder="Your Name">
+</div><br><br>
+    <div class="div1">
+  <label for="age">Your Age :</label>
+  <input type="text" id="age" name="age"  placeholder="Your Age">
+</div>
+<h3>Select Your Gender</h3>
+<div id="div2">
+    <input type="radio" id="female" name="gender" value="female"> 
+      <label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+</div><br><br>
+<textarea id="text" rows="8" cols="50" name="comment"  placeholder="Describe Your Self..."></textarea><br><br>
+
+    <div class="div1">
+        <label for="major">Your Major :</label>
+        <input type="text" id="major" name="major"  placeholder="Your Major"></div><br>
+        <div class="div1">
+        <label for="university">Your university :</label>
+        <input type="text" id="university" name="university"  placeholder="Your university">
+    </div>
+    <h3>Select your Languages</h3>
+    <input type="checkbox" id="HTML" name="HTML" value="HTML">
+    <label for="HTML"> HTML </label><br>
+    <input type="checkbox" id="CSS" name="CSS" value="CSS">
+    <label for="CSS"> CSS </label><br>
+    <input type="checkbox" id="JAVASCRIPT" name="JAVASCRIPT" value="JAVASCRIPT">
+    <label for="JAVASCRIPT"> JAVASCRIPT </label><br><br>
+</form>
+    <input type="submit" id="submit" onclick="func()">
+    <div id="card">
+        <div class="container">
+            <label> Name :</label>
+            <span id="na"></span><br><br>
+            <label> Age :</label>
+            <span id="ag"></span><br><br>
+            <label> Gender:</label>
+            <span id="gen"></span><br><br>
+            <label> Description:</label>
+            <span id="des"></span><br><br>
+            <label> Major:</label>
+            <span id="maj"></span><br><br>
+            <label> university:</label>
+            <span id="uni"></span><br><br>
+            <label> Programming Language: </label>
+            <span id="pro"></span><br><br>
+        </div>
+      </div>
+    <script src="task1.js"></script>
+</body>
+</html>
