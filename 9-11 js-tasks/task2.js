@@ -16,6 +16,6 @@ function func1(){
     document.getElementById('su').innerHTML = x;
     document.getElementById('desc').innerHTML = y;
     document.getElementById('us').innerHTML = d;
-    document.getElementById('t').innerHTML = f;
+    document.getElementById('te').innerHTML = f;
 
     }

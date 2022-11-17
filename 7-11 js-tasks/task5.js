@@ -6,5 +6,5 @@ num =Number( window.prompt("Input the  number", "0"));
     return "false" }
     else  { return "true"}
   }
-        document.write (OddNumber(num))
-  
+        document.write ("the number " +(num)+ " is odd?  "  + OddNumber(num))
+        

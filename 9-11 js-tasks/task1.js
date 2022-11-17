@@ -4,11 +4,13 @@ let x=document.getElementById('name').value;
 localStorage.setItem("Name",x);
 let y=document.getElementById('age').value;
 localStorage.setItem("Age",y);
+let z;
 if(document.getElementById("female").checked){
-    let z=document.getElementById("female").value;
+    z=document.getElementById("female").value;
+
     localStorage.setItem("Gender",z);
 } else if(document.getElementById("male").checked) {
-    let z=document.getElementById("male").value;
+    z=document.getElementById("male").value;
     localStorage.setItem("Gender",z);
 }
 let d=document.getElementById('text').value;
